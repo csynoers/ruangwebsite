@@ -18,10 +18,46 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function carousel()
 	{
-		$this->load->view('themes/default/header.php');
-		$this->load->view('themes/default/navigation.php');
-		$this->load->view('themes/default/footer.php');
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_home_carousel.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function sign_in()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_sign_in.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function album()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_album.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function pricing()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_pricing.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function checkout()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_checkout.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function product()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_product.php');
+		// $this->load->view('themes/default/footer.php');
+	}
+	public function blog()
+	{
+		// $this->load->view('themes/default/header.php');
+		$this->load->view('themes/default/template_blog.php');
+		// $this->load->view('themes/default/footer.php');
 	}
 }
